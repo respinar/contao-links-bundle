@@ -1,0 +1,3 @@
+<li class="link<?= $this->class; ?>">
+  <a href="<?= $this->url; ?>" title="<?= $this->linkTitle; ?>" target="<?= $this->target; ?>" <?php if($this->rel): ?>rel="<?= $this->rel; ?>"<?php endif; ?> <?php if($this->hrefclass): ?>class="<?= $this->hrefclass; ?>"<?php endif; ?>><?= $this->title; ?></a>
+</li>

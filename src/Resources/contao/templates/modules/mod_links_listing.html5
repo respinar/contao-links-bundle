@@ -1,0 +1,13 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<?php if (empty($this->links)): ?>
+    <p class="empty"><?= $this->empty; ?></p>
+  <?php else: ?>
+    <ul>
+      <?php echo implode('', $this->links); ?>
+    </ul>
+  <?php endif; ?>
+
+<?php $this->endblock(); ?>
